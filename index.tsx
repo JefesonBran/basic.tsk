@@ -12,7 +12,7 @@ export default function HomeScreen() {
     <ScrollView>
       <view style={styles.container}> 
           <text>Os Maiores da ETEC</text>
-          <text>vida bela e curta</text>
+          <text>vida louka bela e curta</text>
       </view>
       <view style={styles.container2}>
         <text>texto 1</text><br></br>
