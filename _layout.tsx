@@ -7,21 +7,21 @@ export default function App(){
   const [nome, setNome] = useState(''); //estado para armazenar os dados do formulário
   const [idade, setIdade] = useState('');
   const [resultado, setResultado] = useState('');  
-  const mostrarResultado =()=>{setResultado("Nome: ${nome}, Idade: ${idade}");};
+  const mostrarResultado =()=>{setResultado(`Nome: ${nome}, Idade: ${idade}`);};
 
   //inserindo o texto na tela
   return(
     <View>
-      <Text>Formulário dos Crias</Text>
+      <Text>FORMULÁRIO DOS CRIAS</Text>
 
       <TextInput
-          placeholder="Nome"
-          value={nome}
+          placeholder="Digite o Seu Nome"//mensagem
+          value={nome}//inserir o valor nome
           onChangeText={setNome} //jogando o valor Nome vai ser carregado no formulario
       />
 
       <TextInput
-          placeholder="Idade"
+          placeholder="Digite a Sua Idade"
           value={idade}
           onChangeText={setIdade} //jogando o valor Nome vai ser carregado no formulario
       />
@@ -43,7 +43,7 @@ const style = StyleSheet.create({
     backgroundColor:'#fff',
   },
 
-  tittle:{
+  title:{
     fontSize:24,
     fontWeight:'bold',
     textAlign:'center',
@@ -64,5 +64,7 @@ const style = StyleSheet.create({
     fontSize: 18,
     color:'#333',
     textAlign:'center',
-  }
+  },
+
+
 })
