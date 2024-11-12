@@ -19,6 +19,15 @@ export default function App(){
     Data De Admissão:${da}
     `);};
 
+    const mostrarResultado =()=> //alerta caso os campos não forem preenchidos
+    {
+      if(nome && cargo && idade && telefone && email && da){
+      setResultado(` Nome:${nome}, Cargo:${cargo}, Idade:${idade}, Telefone:${telefone}, E-mail:${email}, Data_Admissão:${da}`);
+      }else{
+        alert("Por favor, preencha todos os campos");
+      }
+      };
+
   //inserindo o texto na tela
   return(
     <View>
